@@ -1,7 +1,5 @@
 <footer class="footer" style="background-color: #222;">
-
-
-    <div class="footer-newsletter"  id="abone">
+    <div class="footer-newsletter" id="abone">
         <div class="container">
             <div class="heading text-center">
                 <h3 class="title">Haber Bülteminize Katılın</h3>
@@ -13,11 +11,11 @@
                     <form action="{{ route('mailsubcribes') }}" method="POST">
                         @csrf
                         <div class="input-group">
-                            <input value="{{old('email_address')}}"
+                            <input value="{{ old('email_address') }}"
                                    name="email_address"
                                    class="form-control"
-                                   placeholder="Email Adresinizi Giriniz">
-
+                                   placeholder="Email Adresinizi Giriniz"
+                            >
                             <div class="input-group-append">
                                 <button class="btn btn-primary"
                                         type="submit"
@@ -107,8 +105,8 @@
         <div class="container">
             <p class="footer-copyright text-white">Copyright © 2022 {{ config('app.name') }}. Tüm Hakları Saklıdır.</p>
             <ul class="footer-menu">
-                <li><a href="https://www.kuatek.com/kurumsal/kisisel-verilern-korunmasi-kanunu" class="text-white">Kvkk Bilgilendirme Metni</a></li>
-                <li><a href="https://www.kuatek.com/kurumsal/gizlilik-politikasi" class="text-white">Gizlilik Politası</a></li>
+                <li><a href="#" class="text-white">Kvkk Bilgilendirme Metni</a></li>
+                <li><a href="#" class="text-white">Gizlilik Politası</a></li>
             </ul>
 
             <div class="social-icons social-icons-color">
